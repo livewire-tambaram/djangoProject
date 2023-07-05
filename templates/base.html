@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .links a{
+            background-color:skyblue;
+            color:black;
+            display:block;
+            padding:10px;
+            margin-bottom:10px;
+        }
+        .links a:hover{
+            color:darkblue;
+            background-color:orange;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        td,th{
+          padding:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid p-3 bg-dark text-white">
+        <h1>LIVEWIRE</h1>
+    </div>
+    <div class="container-fluid p-3">
+        <div class="row">
+            <div class="col-xl-3 links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/course">Courses</a>
+                <a href="/enquiry">Enquire Now</a>
+                <a href="">Visit</a>
+                <a href="">Student Login</a>
+                <a href="/login">Staff Login</a>
+            </div>
+            <div class="col-xl-9 bg-light text-dark table-responsive">
+                {%block content%}
+                <h3>About Livewire</h3>
+                <p>
+                    Livewire's on-demand courses in emerging technologies give you the knowledge you need to stay ahead of the curve and succeed in today's fast-paced world.
+                    You can be confident in your skills and job readiness with our placement assistance, and you will have the support you need to land your dream job in your desired field.
+                </p>
+                <p>
+                    Livewire Future Skills Prime Certified courses are intended to provide practical and affordable training, as well as flexible study options and personalised attention from experienced professionals with real-world experience.
+                </p>
+                <p>
+                    You can be confident in your skills and job readiness with our placement assistance, and you will have the support you need to land your dream job in your desired field.
+                </p>
+                {%endblock%}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

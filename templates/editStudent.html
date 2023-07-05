@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block content%}
+  <h3>Edit Student Details</h3>
+  <form method="post">
+      {%csrf_token%}
+      <table>
+        {{form.as_table}}
+      </table>
+      <input type="submit" value="UPDATE" class="btn btn-primary">
+  </form>
+{%endblock%}

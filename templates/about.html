@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1>This is about page</h1>
+    <h2>Current time is 5.36PM</h2>
+    <h2>{{time}}</h2>
+    <h2>My name is {{name}}. I am coming from {{place}}</h2>
+
+    {{name | upper}}
+    {{place | lower}}
+    {{place | title}}
+    {{name | length}}
+    <br><br>
+    {%load static%}
+    <img src="{%static 'access-queries.png'%}">
+{%endblock%}

@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h2>ENQUIRE NOW</h2>
+    <form method="post">
+        {%csrf_token%}
+        {{myform.as_p}}
+        <input type="submit" value="SUBMIT" class="btn btn-success">
+    </form>
+{%endblock%}
